@@ -1,5 +1,28 @@
 @use 'sass:math';
 
 @import './base/_mixins';
-@import './base/_null-style.scss';
 @import './base/_fonts';
+@import './base/_null-style.scss';
+
+//=========================================================================================================================================================
+// Общие параметры
+.wrapper {
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	> main {
+		flex: 1 1 auto;
+	}
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+//=========================================================================================================================================================
+// Блоки
+@import './_header';
+@import './_main';
+@import './_footer';
