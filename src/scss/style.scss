@@ -22,6 +22,38 @@
 }
 
 //=========================================================================================================================================================
+// Общие стили
+
+.section-title {
+}
+
+.main-btn {
+	border-radius: 55px;
+	border: 1.4px solid #458ff6;
+	color: #458ff6;
+	font-family: 'Mulish';
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 60px;
+}
+
+.content-title {
+	color: #462e6a;
+	font-family: 'Mulish';
+	font-size: 36px;
+	font-weight: 700;
+	line-height: 56px;
+}
+
+.content-text {
+	color: #7d7987;
+	font-family: 'Mulish';
+	font-size: 18px;
+	font-weight: 300;
+	line-height: 30px;
+}
+
+//=========================================================================================================================================================
 // Блоки
 @import './_header';
 @import './_main';
