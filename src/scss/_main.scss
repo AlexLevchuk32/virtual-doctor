@@ -146,19 +146,138 @@
 	// .block-bottom__btn
 	&__btn {
 		min-width: 274px;
-		position: relative;
-		&::after {
-			content: url('/src/img/download-arrow.svg');
-			position: absolute;
-			top: 2px;
-			left: 182px;
-			width: 15px;
-			height: 10px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		&:hover {
+			svg {
+				fill: #fff;
+			}
 		}
+	}
+	&__arrow {
+		margin-left: 5px;
+		transition: all 0.3s ease;
 	}
 }
 
 //=========================================================================================================================================================
 // Contacts
 .contacts {
+	padding-top: 219px;
+	padding-bottom: 229px;
+	position: relative;
+	// .contacts__img
+	&__img {
+		max-width: 571px;
+	}
+	// .contacts__content
+	&__content {
+		padding: 92px 0 92px 164px;
+	}
+	// .contacts__title
+	&__title {
+		max-width: 378px;
+		margin-bottom: 30px;
+	}
+	// .contacts__text
+	&__text {
+		max-width: 378px;
+		margin-bottom: 78px;
+	}
+	// .contacts__btn
+	&__btn {
+		text-align: center;
+		max-width: 180px;
+	}
+}
+.container {
+}
+.contacts-inner {
+	display: flex;
+	margin-bottom: 230px;
+}
+.content-title {
+}
+.content-text {
+}
+.main-btn {
+}
+
+.contacts-form {
+	display: flex;
+	flex-direction: column;
+	padding: 88px 386px 75px;
+	border-radius: 24px;
+	background: linear-gradient(208deg, #6888c8 9.05%, #5a98f2 76.74%);
+
+	// .contacts-form__title
+	&__title {
+		max-width: 398px;
+		color: #fff;
+		font-family: 'Mulish';
+		font-size: 36px;
+		font-weight: 700;
+		line-height: 48px;
+		margin-bottom: 39px;
+	}
+	// .contacts-form__input
+	&__input {
+		max-width: 508px;
+		padding: 17px;
+		border-bottom: 2px solid #fff;
+		color: #fff;
+		font-family: 'Mulish';
+		font-size: 24px;
+		font-weight: 700;
+		line-height: 38px;
+		&::placeholder {
+			color: #fff;
+			font-family: 'Mulish';
+			font-size: 24px;
+			font-weight: 700;
+			line-height: 38px;
+		}
+	}
+	// .contacts-form__btn
+	&__btn {
+		max-width: 508px;
+		border-radius: 55px;
+		border: 1.4px solid #fff;
+		color: #fff;
+		&:hover {
+			color: #000;
+			background-color: #fff;
+			border: 1.4px solid #000;
+		}
+	}
+}
+
+.input {
+	// .input__name
+	&__name {
+		margin-bottom: 41px;
+	}
+	// .input__lastname
+	&__lastname {
+		margin-bottom: 41px;
+	}
+	// .input__email
+	&__email {
+		margin-bottom: 57px;
+	}
+}
+
+.up-btn {
+	position: absolute;
+	right: 25px;
+	bottom: 145px;
+	svg {
+		transition: all 1.3s ease;
+	}
+	&:hover {
+		svg {
+			fill: #458ff6;
+		}
+	}
 }

@@ -35,6 +35,13 @@
 	font-size: 18px;
 	font-weight: 700;
 	line-height: 60px;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	&:hover {
+		border: 1.4px solid #fff;
+		color: #fff;
+		background-color: #458ff6;
+	}
 }
 
 .content-title {
